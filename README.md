@@ -1,2 +1,4 @@
 # Calculator
-This is a basic calcultor.
+THIS IS A BASIC CALCULATOR.
+#calc.c
+THIS CAN PERFORM SOME BASIC OPERATION ON TWO NUMBERS.
