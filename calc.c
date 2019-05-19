@@ -3,14 +3,18 @@
 int main()
 
 {   
-	long long num1,num2;
+	double num1,num2,i=0;
 	char c;
-	
-	  printf("NOTE:Give space between numbers and symbols\n");
-    
-    scanf("%lld %c %lld",&num1,&c,&num2);
-    long long ans,opans;    
-      
+	printf("NOTE:Give numbers and symbols\nType 'n' for new line\n");
+	scanf("%lf",&num1);
+    while(1)
+    {
+    scanf(" %c",&c);
+    double ans,opans;    
+    if(c=='n')
+	scanf("%lf %c %lf",&num1,&c,&num2);	
+    else
+	scanf(" %lf",&num2);
     switch(c)
      { case '+':
             {  opans=num1+num2;  break;}
@@ -21,9 +25,8 @@ int main()
       case '/':
            {   opans=num1/num2;  break;}
            }     
-      printf("%lli",opans); 
+    printf("=%lf",opans);
+    num1=opans;
+    }
       return 0;
-
-
-
 }
