@@ -17,15 +17,15 @@ int main()
 	scanf(" %lf",&num2);
     switch(c)
      { case '+':
-            {  opans=num1+num2;  break;}
+            {  num1+=num2;  break;}
       case '-':     
-           {   opans=num1-num2;  break;}
+           {   num1-=num2;  break;}
       case '*':
-           {   opans=num1*num2;  break;}
+           {   num1*=num2;  break;}
       case '/':
-           {   opans=num1/num2;  break;}
+           {   num1/=num2;  break;}
            }     
-    printf("=%lf",opans);
+    printf("=%lf",num1);
     num1=opans;
     }
       return 0;
